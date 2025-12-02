@@ -46,8 +46,8 @@ public class LeetCodeFindWords1160 {
     public static int countCharacters(String[] words, String chars) {
 
         int result = 0;
+        StringBuilder tempChars = new StringBuilder(chars);
         for(String  word: words){
-            StringBuilder tempChars = new StringBuilder(chars);
             boolean flag = true;
             for(int i = 0; i< word.length(); i++){
                 char ch = word.charAt(i);
@@ -56,8 +56,6 @@ public class LeetCodeFindWords1160 {
                     flag = false;
                     break;
                 }
-
-                tempChars.deleteCharAt(indexOf);
             }
             if(flag){
                 result += word.length();
