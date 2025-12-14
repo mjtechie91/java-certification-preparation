@@ -8,6 +8,8 @@ public class MainTest {
         testLinkedList.add(20);
         testLinkedList.add(30);
         testLinkedList.add(40);
+        testLinkedList.add(50);
+        testLinkedList.add(60);
         testLinkedList.print();
     }
 }

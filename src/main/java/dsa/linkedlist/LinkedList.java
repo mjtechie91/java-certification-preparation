@@ -22,8 +22,11 @@ public class LinkedList {
            this.head = newNode;
            this.tail = newNode;
        } else{
-           this.tail.next = newNode;
+           Node temp = this.tail;
+           temp.next = newNode;
+           this.tail = newNode;
        }
+       this.length = length + 1;
 
     }
 
